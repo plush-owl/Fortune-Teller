@@ -1,8 +1,8 @@
 //var str
-pronoun = document.getElementById('gender').value;
+pronoun = document.getElementById('gender');
 
-//var selectedPronoun = pronoun.options[pronoun.selectedIndex].value;
-//console.log(selectedPronoun);
+var selectedPronoun = pronoun.options[pronoun.selectedIndex].value;
+console.log(selectedPronoun);
 
 function fortune(){
     console.log('Insert Fortune!');
@@ -12,12 +12,13 @@ function fortune(){
 
 document.getElementById('fortuneButton').onclick = function(){
     //alert('button was clicked!');
-    console.log(pronoun)
-    if (pronoun == 'Woman'){
+    //console.log(pronoun)
+    console.log(selectedPronoun);
+    if (selectedPronoun == 'Woman'){
         console.log('Sup bitch!');
-    } else if (pronoun == 'Person'){
+    } else if (selectedPronoun == 'Person'){
         console.log('Sup homosapien!');
-    } else if (pronoun == 'Man'){
+    } else if (selectedPronoun == 'Man'){
         console.log('Sup Bruh!');
     } else {
         console.log('Who are you?!');
