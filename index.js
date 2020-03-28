@@ -1,9 +1,11 @@
 console.log('Hello Earth!');
 
-if (document.getElementById('gender').value = 'He') {
+var pronoun = document.getElementById('gender').value
+
+if (pronoun = 'He') {
     console.log('It\'s a boy!');
-} else if (document.getElementById('gender').value = 'She'){
+} else if (pronoun = 'She'){
     console.log('It\'s a girl!');
-} else if (document.getElementById('gender').value = 'They'){
+} else if (pronoun = 'They'){
     console.log('It\'s a person!')
 }
