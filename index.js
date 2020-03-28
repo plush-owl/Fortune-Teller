@@ -53,3 +53,4 @@ document.getElementById('fortuneButton').onclick = function(){
     $( "#output" ).append(outputFortune); 
 
 }; 
+
