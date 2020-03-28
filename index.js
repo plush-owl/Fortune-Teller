@@ -1,27 +1,18 @@
-var str
 pronoun = document.getElementById('gender');
 
 //var selectedPronoun = pronoun.options[pronoun.selectedIndex].value;
 //console.log(selectedPronoun);
 
-if (pronoun = 'Man') {
-    console.log('It\'s a boy!');
-} else if (pronoun = 'Woman'){
-    console.log('It\'s a girl!');
-} else if (pronoun = 'Person'){
-    console.log('It\'s a person!');
-}; // theory: if you select a diff gender and click fortune it should change the fortune
-
 function fortune(){
     console.log('Insert Fortune!');
 };
 
-console.log(pronoun)
+//console.log(pronoun)
 
 document.getElementById('fortuneButton').onclick = function(){
     //alert('button was clicked!');
     console.log(pronoun)
-    if (pronoun == 'Woman'){
+    /* if (pronoun == 'Woman'){
         console.log('Sup bitch!');
     } else if (pronoun == 'Person'){
         console.log('Sup homosapien!');
@@ -29,19 +20,26 @@ document.getElementById('fortuneButton').onclick = function(){
         console.log('Sup Bruh!');
     } else {
         console.log('Who are you?!');
-    } 
+    } */  //For Testing
 
-    /*switch (pronoun){
-        case 'He':
-            console.log('Hey bro');
-            break;
-        case 'She':
-            console.log('Hey sis');
-            break;
-        case 'They':
-            console.log('Hey person')
-            break;
-    }*/
 }; 
 
-console.log(`Hello there, ${pronoun}.`)
+let fortuneNumber = Math.floor(Math.random() * 5); //will change num later
+
+switch(fortuneNumber){
+    case 0:
+        console.log(`Hey, ${pronoun}! Your number is ${fortuneNumber}.`);
+        break;
+    case 1:
+        console.log(`Hey, ${pronoun}! Your number is ${fortuneNumber}.`);
+        break;
+    case 2:
+        console.log(`Hey, ${pronoun}! Your number is ${fortuneNumber}.`);
+        break;
+    case 3:
+        console.log(`Hey, ${pronoun}! Your number is ${fortuneNumber}.`);
+        break;
+    case 4:
+        console.log(`Hey, ${pronoun}! Your number is ${fortuneNumber}.`);
+        break;
+}
