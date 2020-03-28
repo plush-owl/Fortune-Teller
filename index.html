@@ -1,16 +1,27 @@
 
 <!DOCTYPE html>
 
+<link rel="stylesheet" type="text/css" href="index.css">
+
 <html> 
 
-    
+<!--Everything-->
+<div class= "container">
 
-    <h1>Fortune Teller</h1>
 
+    <div></div>
+    <div class = "imageHolder"> 
+    <img src="portrait.png" class="portrait">
+    </div>
+
+<!---Gender Select Dropdown---->
+
+<div class="rightSide">
+
+    <h1>Fortune Teller Babaloo</h1>
     <p>Select your gender</p>
-    
-    <label for="gender">Gender:</label>
 
+    <label for="gender">Gender:</label>
 <select id="gender">
   <option value="man" selected>He</option>
   <option value="woman">She</option>
@@ -19,13 +30,19 @@
 
 <br> <br>
 
+<!--Tell fortune button-->
+
 <button id="fortuneButton"> Tell my fortune!</button>
+
+</div>
 
 <br> <br>
 
-<p id= "output"> (Your fortune will go here.)</p>
+<!--Where the fortune itself goes-->
 
+<p id= "output"> </p>
 
+</div>
 
 
 
@@ -35,4 +52,3 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="index.js"></script>
-<link rel="stylesheet" type="text/css" href="index.css">

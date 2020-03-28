@@ -1,4 +1,34 @@
 
-html { text-align: center; }
+html {
+    
+text-align: center; 
+background-color: darkgrey;
+
+}
+
+.container {
+display: flex;
+flex-direction: row;
+margin: 0, auto;
+margin-top: 5%;
+}
 
 h1 { color: red; }
+
+
+.imageHolder {
+    
+    
+    display: flex;
+    justify-content: center;}
+
+.portrait { 
+    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 18%;
+    height: auto;
+    
+    
+    }
