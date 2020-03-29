@@ -28,7 +28,7 @@ document.getElementById('fortuneButton').onclick = function(){
 
     let fortuneNumber = Math.floor(Math.random() * 5); //will change num later
 
-    switch(fortuneNumber){
+    /*switch(fortuneNumber){
         case 0:
             outputFortune = (`Hey, ${selectedPronoun}! Your number is ${fortuneNumber}.`);
             break;
@@ -44,13 +44,22 @@ document.getElementById('fortuneButton').onclick = function(){
         case 4:
             outputFortune = (`Hey, ${selectedPronoun}! Your number is ${fortuneNumber}.`);
             break;
+    }; */
+
+    console.log(fortuneList[fortuneNumber]);
+
+    let future = fortuneList[fortuneNumber];
+
+    if (future){
+        outputFortune = (`You are a very lucky ${selectedPronoun}. 
+        For I predicted that ${future}`);
+    } else {
+        console.log('Shit. I lost my powers!');
     }
 
     //clears the output area so that fortunes do not stack.
     text_clear();
 
     //appends the fortune to the html so that you can see it on the page.
-    $( "#output" ).append(outputFortune); 
-
-}; 
-
+    $( "#output" ).append(outputFortune);
+}
