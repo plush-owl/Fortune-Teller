@@ -3,9 +3,12 @@ html {
     
 text-align: center; 
 background-color: black;
+font-family: 'Acme', sans-serif;
 
 
 }
+
+p { font-size: 25px; }
 
 .container {
 display: flex;
@@ -18,18 +21,17 @@ border-radius: 30px;
 margin: 1%;
 }
 
-h1 { color: red; }
+h1 { color: darkblue; font-size: 55px; padding: 20px; }
 
 .content {
     display: flex;
     justify-content: center;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color:rgba(255, 255, 255, 0.85);
     border-radius: 35px;
 }
 
 .imageHolder {
-    
-    
+
     display: flex;
     justify-content: center;}
 
@@ -38,7 +40,7 @@ h1 { color: red; }
     display: flex;
     flex-direction: column;
     align-self: center;
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     padding: 5%;
     
@@ -48,9 +50,41 @@ h1 { color: red; }
 .leftSide { width: 50%;}
 
 .rightSide { 
-    
-    align-self: top; 
+    justify-content: center;
     padding-top: 10%;
+    margin-left: 0;
     color: black;
+    align-items: center;
+
+}
+
+.result {
+    margin-left: 55px;
+    display: flex;
+    width: 400px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+button { 
+
+    background-color: rgb(5, 42, 145); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Acme', sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+ }
+
+
+ @media screen and (max-width: 1024px) {
+    .portrait {
+        display: none !important;
+    }
 
 }

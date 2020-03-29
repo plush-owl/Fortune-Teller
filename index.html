@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 
 <html>
 
@@ -25,7 +26,7 @@
             <h1>Fortune Teller Babaloo</h1>
             <p>Select your gender</p>
 
-            <label for="gender">Gender:</label>
+            <label for="gender" style = "font-size: 20px;">Gender: </label>
             <select id="gender">
                 <option value="man" selected>He</option>
                 <option value="woman">She</option>
@@ -38,8 +39,9 @@
             <br> <br>
 
             <!--Where the fortune itself goes-->
-
+            <div class="result">
             <p id="output"> </p>
+            </div>
 
         </div>
     </div>
