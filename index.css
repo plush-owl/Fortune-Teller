@@ -14,8 +14,8 @@ justify-content: center;
 align-items: center;
 height: 900px;
 background-image: url(nightime.png);
-background-repeat: no-repeat;
-background-size: cover;
+border-radius: 30px;
+margin: 1%;
 }
 
 h1 { color: red; }
@@ -23,7 +23,8 @@ h1 { color: red; }
 .content {
     display: flex;
     justify-content: center;
-    background-color:rgba(0, 0, 0, 0.9);
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius: 35px;
 }
 
 .imageHolder {
@@ -50,6 +51,6 @@ h1 { color: red; }
     
     align-self: top; 
     padding-top: 10%;
-    color: white;
+    color: black;
 
 }
