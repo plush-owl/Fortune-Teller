@@ -26,7 +26,7 @@ document.getElementById('fortuneButton').onclick = function(){
     //console.log(pronoun)
     console.log(selectedPronoun);
 
-    let fortuneNumber = Math.floor(Math.random() * 5); //will change num later
+    let fortuneNumber = Math.floor(Math.random() * 357); //will change num later
 
     /*switch(fortuneNumber){
         case 0:
