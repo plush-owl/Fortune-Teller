@@ -2,19 +2,29 @@
 html {
     
 text-align: center; 
-background-color: darkgrey;
+background-color: black;
+
 
 }
 
 .container {
 display: flex;
 flex-direction: row;
-margin: 0, auto;
-margin-top: 5%;
+justify-content: center;
+align-items: center;
+height: 900px;
+background-image: url(nightime.png);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 h1 { color: red; }
 
+.content {
+    display: flex;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.9);
+}
 
 .imageHolder {
     
@@ -27,8 +37,19 @@ h1 { color: red; }
     display: flex;
     flex-direction: column;
     align-self: center;
-    max-width: 18%;
+    max-width: 80%;
     height: auto;
+    padding: 5%;
     
     
     }
+
+.leftSide { width: 50%;}
+
+.rightSide { 
+    
+    align-self: top; 
+    padding-top: 10%;
+    color: white;
+
+}

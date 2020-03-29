@@ -1,49 +1,50 @@
-
 <!DOCTYPE html>
 
 <link rel="stylesheet" type="text/css" href="index.css">
 
-<html> 
+<html>
 
 <!--Everything-->
-<div class= "container">
+<div class="container">
 
 
-    <div></div>
-    <div class = "imageHolder"> 
-    <img src="portrait.png" class="portrait">
+    <div class="content">
+        <div class="leftSide">
+
+            <div class="imageHolder">
+                <img src="portrait.png" class="portrait">
+            </div>
+        </div>
+
+
+        <!---Right side of the screen---->
+
+        <div class="rightSide">
+
+            <!---Gender Select Dropdown---->
+            <h1>Fortune Teller Babaloo</h1>
+            <p>Select your gender</p>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="man" selected>He</option>
+                <option value="woman">She</option>
+                <option value="person">They</option>
+            </select>
+
+            <br> <br>
+            <!--Tell fortune button-->
+            <button id="fortuneButton"> Tell my fortune!</button>
+            <br> <br>
+
+            <!--Where the fortune itself goes-->
+
+            <p id="output"> </p>
+
+        </div>
     </div>
 
-<!---Gender Select Dropdown---->
-
-<div class="rightSide">
-
-    <h1>Fortune Teller Babaloo</h1>
-    <p>Select your gender</p>
-
-    <label for="gender">Gender:</label>
-<select id="gender">
-  <option value="man" selected>He</option>
-  <option value="woman">She</option>
-  <option value="person">They</option>
-</select>
-
-<br> <br>
-
-<!--Tell fortune button-->
-
-<button id="fortuneButton"> Tell my fortune!</button>
-
 </div>
-
-<br> <br>
-
-<!--Where the fortune itself goes-->
-
-<p id= "output"> </p>
-
-</div>
-
 
 
 
@@ -51,4 +52,5 @@
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="index.js"></script>
 <script src="index.js"></script>
