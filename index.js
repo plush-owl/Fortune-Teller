@@ -46,13 +46,13 @@ document.getElementById('fortuneButton').onclick = function(){
             break;
     }; */
 
-    console.log(fortuneList[fortuneNumber]);
+    //console.log(fortuneList[fortuneNumber]);
 
     let future = fortuneList[fortuneNumber];
 
     if (future){
         outputFortune = (`You are a very lucky ${selectedPronoun}. 
-        For I predicted that ${future}`);
+        I predict that... ${future}`);
     } else {
         console.log('Shit. I lost my powers!');
     }
